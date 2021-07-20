@@ -82,7 +82,7 @@
         process.stdin.pipe(Ystream).pipe(process.stdout);
         `
 #### 7. HTTP STREAMING. VIDEO STREAMING.
-    ```javascript
+  ```javascript
         router.get('/videos',(req,res,next) => {
   const paths = path.dirname(process.mainModule.filename )
   const paths2 = path.join(paths ,'/Files/')
@@ -125,5 +125,4 @@
     fs.createReadStream(filePath).pipe(res)
   }
 
-})
-    ```
+}) ```
